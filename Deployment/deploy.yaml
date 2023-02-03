@@ -15,8 +15,8 @@ spec:
         app: bakehouse
     spec:
       containers:
-      - name: bakehouse
-        image: alielhabal70/bakehouse:10
+      - image: husseinghoraba/bakehouse:${BUILD_NUMBER}
+        name: bakehouse
         imagePullPolicy: Always
         ports:
         - containerPort: 80
